@@ -50,6 +50,19 @@ $third->add_grade(60);
 $third->status="Freshman";
 $students['B666'] = $third;
 
+
+$fourth = new Student();
+$fourth->surname = "Lily";
+$fourth->first_name = "wang";
+$fourth->add_email('home','wang@1688.com');
+$fourth->add_email('work1','a_einstein@bcit.ca');
+$fourth->add_email('work2','wang@physics.mit.edu');
+$fourth->add_grade(65);
+$fourth->add_grade(88);
+$fourth->add_grade(76);
+$fourth->status="Freshman";
+$students['c888'] = $fourth;
+
 foreach($students as $student);
 echo $student->toString();
         ?>
